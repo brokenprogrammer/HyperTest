@@ -21,3 +21,9 @@ jobs:
         run: |
           cd samples
           ./sample1_unittest
+      
+      - name: Run Sample 2 Tests
+        shell: bash
+        run: |
+          cd samples
+          ./sample2_unittest

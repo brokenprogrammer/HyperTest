@@ -24,3 +24,9 @@ jobs:
         run: |
           cd samples
           sample1_unittest.exe
+
+      - name: Run Sample 2 Tests
+        shell: cmd
+        run: |
+          cd samples
+          sample2_unittest.exe
