@@ -14,7 +14,7 @@
 int 
 RunTesting(int argc, char ** argv)
 {
-    LARGE_INTEGER PerfCounterFrequency = {};
+    LARGE_INTEGER PerfCounterFrequency = {0};
     uint64_t Failed = 0;
     size_t *FailedTestCases = 0;
     size_t NumberOfFailedTestCases = 0;
@@ -56,8 +56,8 @@ RunTesting(int argc, char ** argv)
     {
         int Result = 0;
         int64_t NanoSeconds = 0;
-        LARGE_INTEGER PerfCounterStart = {};
-        LARGE_INTEGER PerfCounterEnd = {};
+        LARGE_INTEGER PerfCounterStart = {0};
+        LARGE_INTEGER PerfCounterEnd = {0};
 
         SetConsoleTextAttribute(HConsole, FOREGROUND_GREEN);
         printf("[ RUN      ]");
